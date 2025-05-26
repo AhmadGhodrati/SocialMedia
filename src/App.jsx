@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Story from "./components/story/Story.jsx";
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,7 +13,7 @@ function App() {
         <Story imageUrl={'https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-1170x780.jpg'} imageSize={100} text={"Ahmad"}/>
         <Story imageUrl={'https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-1170x780.jpg'} imageSize={100} text={"Ahmad"}/>
         <Story imageUrl={'https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-1170x780.jpg'} imageSize={100} text={"Ahmad"}/>
-      <div>
+      <div className={""}>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -25,7 +26,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
+        <p className={"font-mono"}>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
